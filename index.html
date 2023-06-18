@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>weather informer</h1>
+        <div class="tab_section">
+            <div id="tabs" class="local_tab">your weather</div>
+            <div id="tabs" class="city_tab">search weather</div>
+        </div>
+
+        <div class="weather_section_container">
+
+            <!-- grant location container -->
+            <div class="grant_location_tab">
+                <div class="map_img"><img src="images/icon-g8c32066c1_1280.png" alt=""></div>
+                <h3>grant location access</h3>
+                <p>allow acces to get weather information</p>
+                <div class="grant_access_btn">grant access</div>
+            </div>
+            <!---- search form ---->
+
+            <form class="search_container">
+                <input type="text" placeholder="enter city name....." class="search_input">
+                <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <!--- loading section --->
+            <div class="loading_section">
+                <img src="images/loading.gif" alt="loading">
+            </div>
+
+            <!-------- show weather info --------->
+
+            <div class="weather_data">
+
+                <!-- city name and flag -->
+                <div class="city_info">
+                    <div class="name"></div>
+                    <img class="flag">
+                </div>
+
+                <!-- weather and temperature -->
+
+                <div class="weather"></div>
+                <img class="weather_icon">
+                <div class="temperature"></div>
+
+
+                <!---- parameter container ---->
+
+                <div class="parameter_section">
+
+                    <div class="parameter">
+                        <div class="para_icon"><img src="images/windspeed.png" alt=""></div>
+                        <p>windspeed</p>
+                        <p class="windspeed"></p>
+                    </div>
+                    <div class="parameter">
+                        <div class="para_icon"><img src="images/humidity.png" alt=""></div>
+                        <p>humidity</p>
+                        <p class="humidity"></p>
+                    </div>
+                    <div class="parameter">
+                        <div class="para_icon"><img src="images/clouds.png" alt=""></div>
+                        <p>clouds</p>
+                        <p class="clouds"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
